@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html>
+    <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </head>
+
+    <link rel="stylesheet" href="../Styling/BaseStyling.css">
+   
+    <nav>
+        <lable class="heading">Title</lable>
+        <ul>
+            <li><a href="./MenuScreen.HTML">Main Menu</a></li>
+            <li><a href="./QuadrentBase.HTML">Refresh Qestions</a></li>
+            <li><a onclick="if (document.getElementById('hideaway').style.display === 'none') {
+                document.getElementById('hideaway').style.display = 'block';
+              } else {
+                document.getElementById('hideaway').style.display = 'none';
+              }">Reveal Answers</a></li>
+        </ul>
+    </nav>
+    <body>
+        <div class="container">
+            <div class="child-container upperleft" >
+                Easy
+                <table class="qna-table">
+                    <tr>
+                        <th>
+                            Question 1
+                        </th>
+                        <th>
+                            pic
+                        </th>
+                    </tr>
+                    <tr>
+                        <th id="hideaway" style="display:none;">
+                            Answer 1
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            Question 2
+                        </th>
+                        <th>
+                            pic
+                        </th>
+                    </tr>
+                    <tr>
+                        <th id="hideaway" style="display:none;">
+                            Answer 2
+                        </th>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="child-container upperright" >
+                Video
+            </div>
+            <div class="child-container lowerleft" >
+                Medium
+                <table class="qna-table">
+                    <tr>
+                        <th>
+                            Question 1
+                        </th>
+                        <th>
+                            pic
+                        </th>
+                    </tr>
+                    <tr>
+                        <th id="hideaway" style="display:none;">
+                            Answer 1
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            Question 2
+                        </th>
+                        <th>
+                            pic
+                        </th>
+                    </tr>
+                    <tr>
+                        <th id="hideaway" style="display:none;">
+                            Answer 2
+                        </th>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="child-container lowerright" >
+                Hard
+                <table class="qna-table">
+                    <tr>
+                        <th>
+                            Question 1
+                        </th>
+                        <th>
+                            pic
+                        </th>
+                    </tr>
+                    <tr>
+                        <th id="hideaway" style="display:none;">
+                            Answer 1
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            Question 2
+                        </th>
+                        <th>
+                            pic
+                        </th>
+                    </tr>
+                    <tr>
+                        <th id="hideaway" style="display:none;">
+                            Answer 2
+                        </th>
+                    </tr>
+            </div>
+        </div>
+    </body>
+</html>
