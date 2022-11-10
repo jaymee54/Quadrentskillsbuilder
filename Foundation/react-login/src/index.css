@@ -1,0 +1,12 @@
+*{
+  margin: 0.1%;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+input, button {
+  appearance: none;
+  background: none;
+}
+
