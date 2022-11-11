@@ -13,7 +13,7 @@ function LoginForms({Login, error }) {
     <html className='background'>
         <form className='container middle' onSubmit={submitHandler}>
             <div className='form-inner box'>
-                <h2>Log In</h2>
+                <h1>Log In</h1>
 
                 <br></br>
 
@@ -30,7 +30,7 @@ function LoginForms({Login, error }) {
                     <label htmlFor='password'> Password:</label>
                     <input type='password' name='password' id='password' onChange={e => setDetails({...details, password: e.target.value})} value={details.password} />
                 </div>           
-                <input className='hoverable middle' type='submit' value='LOGIN'/>
+                <input className='hoverable middle' type='submit' value='Submit'/>
             </div>
         </form>
     </html>
