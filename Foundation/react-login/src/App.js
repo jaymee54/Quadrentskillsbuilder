@@ -8,7 +8,7 @@ function App() {
     email: 'admin@admin.com',
     password: 'admin123'
   }
-// Constants --------------------------------
+// Constants ------------------------------------------------------------------------------
   const [user, setUser] = useState({name: "", email: ""});
   const [error, setError] = useState("");
 
@@ -31,7 +31,7 @@ function App() {
 
     }
   }
-
+// Logout ---------------------------------------------------------------------------------
   const Logout = () => {
     setUser({name: "", email: ""});
   }
@@ -43,7 +43,7 @@ function App() {
           <h2>
             Welcome, <span>{user.name}</span>
           </h2>
-          <button onClick={Logout}>Logout</button>
+          <button className='hoverable' onClick={Logout}>Logout</button>
         </div>
         ) : (
           <LoginForms Login={Login} error={error} />
