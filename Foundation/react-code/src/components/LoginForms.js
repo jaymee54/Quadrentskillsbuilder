@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 
 // Log in functionality -------------------------------------------------------------------------------------------------------------------------------------------------
-function LoginForms({Login, error }) {
+function LoginForms({Login, error}) {
     const [details, setDetails] = useState({name:"", email: "", password: ""});
 
     const submitHandler = e => {
@@ -13,7 +13,7 @@ function LoginForms({Login, error }) {
 // Log in page -----------------------------------------------------------------------------------------------------------------------------------------------------------
   return (
     <html className='background'>
-        <form className='container middle' onSubmit={submitHandler}>
+        <form className='highcontainer middle' onSubmit={submitHandler}>
             <div className='form-inner box'>
                 <h1>Log In</h1>
 

@@ -27,7 +27,7 @@ function App() {
 
     } else {
 
-        console.log("details do not match")
+        console.log("Details do not match")
         setError("Details do not match!")
 
     }
@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="App">
       {(user.email != "" ) ? (
-        <MainMenu />
+        <MainMenu User={user} />
         // want this replaced with link to the main menu
         ) : (
           <LoginForms Login={Login} error={error} />
