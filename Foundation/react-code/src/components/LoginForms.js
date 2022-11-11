@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+
+// Log in functionality -------------------------------------------------------------------------------------------------------------------------------------------------
 function LoginForms({Login, error }) {
     const [details, setDetails] = useState({name:"", email: "", password: ""});
 
@@ -8,7 +10,7 @@ function LoginForms({Login, error }) {
         
         Login(details);
     }
-
+// Log in page -----------------------------------------------------------------------------------------------------------------------------------------------------------
   return (
     <html className='background'>
         <form className='container middle' onSubmit={submitHandler}>

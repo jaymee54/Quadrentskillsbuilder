@@ -4,8 +4,12 @@
     padding: 0;
     text-decoration: none;
 }
-body {
-    background-color: rgb(169, 159, 150, 0.75);
+.background{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgb(156, 255, 250) 20%, rgb(0, 167, 158));
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 form {
     margin: 0;
@@ -26,7 +30,7 @@ form {
 }
 nav{
     background: rgb(55, 18, 60, 0.75);
-    height: 4vh;
+    height: 6vh;
     width: 100%;
 }
 nav ul{
@@ -82,7 +86,7 @@ a.active, a:hover{
 }
 
 
-.container{
+.quadrentscontainer{
     display: grid;
     height: 96vh;
     width: 100%;

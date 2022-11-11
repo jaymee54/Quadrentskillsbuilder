@@ -3,8 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: monospace;
-  text-align: center;
-  align-self: center;
   font-size: clamp(20px, 2vw, 30px);
 }
 .box{
@@ -13,7 +11,6 @@
   margin: 10px;
   border-radius: 10px;
 }
-
 .background{
   height: 100vh;
   width: 100vw;
@@ -29,21 +26,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin: auto; */
 }
- input, button {
-  appearance: none;
-  /* background: rgba(255, 255, 255, 0.1); */
-  background: none;
-  border: none;
-  outline: none;
-  /* font-size: larger; */
-}
-
 .ErrorText{
   color: red;
 }
-
 .hoverable {
     text-decoration: none;
     color: black;
@@ -52,9 +38,43 @@
     padding: 7px 7px;
     border-radius: 7px;
 }
-
 .hoverable.active, .hoverable:hover{
     background: rgb(150, 211, 138);
     transition-duration: 0.5s;
 }
 
+/* Log in specific */
+ input{
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+ /* Quadrent specific */
+ .upperleft {
+  background-color: rgb(172, 243, 157, 0.75);
+}
+.upperright {
+  background-color: rgb(169, 159, 150, 0.75);
+}
+.lowerleft {
+  background-color: rgb(156, 255, 250, 0.75);
+}
+.lowerright {
+  background-color: rgb(175, 62, 77, 0.75);
+}
+.quadrentscontainer{
+  display: grid;
+  height: 96vh;
+  width: 100%;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+.child-quadrent{
+  padding:  0 10px;
+  font-family: monospace;
+  font-size: 2rem;
+  border: 1px solid black;
+  position: relative;
+}

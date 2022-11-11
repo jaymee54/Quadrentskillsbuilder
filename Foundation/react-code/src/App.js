@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import LoginForms from './components/LoginForms';
+import MainMenu from './components/MainMenu';
 
 
 // Users ---------------------------------------------------------------------------------
@@ -35,16 +36,12 @@ function App() {
   const Logout = () => {
     setUser({name: "", email: ""});
   }
-
+// Render pages log in and logged in ------------------------------------------------------
   return (
     <div className="App">
       {(user.email != "" ) ? (
-        <div className = "welcome">
-          <h2>
-            Welcome, <span>{user.name}</span>
-          </h2>
-          <button className='hoverable' onClick={Logout}>Logout</button>
-        </div>
+        <MainMenu />
+        // want this replaced with link to the main menu
         ) : (
           <LoginForms Login={Login} error={error} />
         )}
