@@ -86,7 +86,7 @@ a.active, a:hover{
 }
 
 
-.quadrentscontainer{
+.container{
     display: grid;
     height: 96vh;
     width: 100%;

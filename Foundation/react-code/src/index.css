@@ -51,7 +51,19 @@
   justify-content: center;
 }
 /* Banner */
-
+.banner{
+display: flex;
+background-color: rgba(112, 28, 95, 0.75);
+height: 6vh;
+width: 100%;
+}
+.bannerObject{
+  display: inline-block;
+  justify-content: center;
+  padding: 10px;
+  margin-right: 20px;
+  margin: auto;
+}
 
 /* Log in specific */
  input{

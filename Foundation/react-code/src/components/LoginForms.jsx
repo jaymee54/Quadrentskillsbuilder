@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 // Log in functionality -------------------------------------------------------------------------------------------------------------------------------------------------
 function LoginForms({Login, error}) {
@@ -12,7 +12,7 @@ function LoginForms({Login, error}) {
     }
 // Log in page -----------------------------------------------------------------------------------------------------------------------------------------------------------
   return (
-    <html className='background'>
+    <div className='background'>
         <form className='highcontainer middle' onSubmit={submitHandler}>
             <div className='form-inner box'>
                 <h1>Log In</h1>
@@ -35,7 +35,7 @@ function LoginForms({Login, error}) {
                 <input className='hoverable middle' type='submit' value='Submit'/>
             </div>
         </form>
-    </html>
+    </div>
   )
 }
 

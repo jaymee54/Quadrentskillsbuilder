@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
-import LoginForms from './components/LoginForms';
-import MainMenu from './components/MainMenu';
+import React, {useState} from 'react'
+import LoginForms from './components/LoginForms'
+import MainMenu from './components/MainMenu'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 
 // Users ---------------------------------------------------------------------------------
